@@ -70,11 +70,11 @@ FlowChart|Entity Diagram
 
 This project is based on a waterfall methodology, since the process is successively divided with the intention of having a sequential development, and being able to finish one stage at a time.
 The structure of this methodology is as follows.
-- Requirements: We base ourselves on the needs of the problem, the information provided by the inputs and outputs shown.
-- Analysis: Select the language to be used. (Python)
-- Design: The flow of the program and the design of the entity used were developed using UML
-- Implementation: Functions that perform specific tasks were created in order to be able to address the general problem in parts, in addition to improving the readability and understanding of the code,
-- Test: Unit tests were performed using unittest for each of the functions in order to verify from the structure to the result obtained.
+- **Requirements**: We base ourselves on the needs of the problem, the information provided by the inputs and outputs shown.
+- **Analysis**: Select the language to be used. (Python)
+- **Design**: The flow of the program and the design of the entity used were developed using UML
+- **Implementation**: Functions that perform specific tasks were created in order to be able to address the general problem in parts, in addition to improving the readability and understanding of the code,
+- **Test**: Unit tests were performed using unittest for each of the functions in order to verify from the structure to the result obtained.
 
 ## Run Locally
 
