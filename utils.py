@@ -4,7 +4,7 @@ from datetime import datetime
 from Employee import Employee
 
 
-def createSchedule(line):
+def create_schedule(line):
     schedule = {}
     for value in line.split(","):
         day = value[:2]
@@ -20,7 +20,7 @@ def loadfile(path):
     with open(path, 'r') as file:
         for line in file:
             name, schedule = line.strip().split("=")
-            schedule = createSchedule(schedule)
+            schedule = create_schedule(schedule)
             employee = Employee(name, schedule)
             employees.append(employee)
     return employees
@@ -31,14 +31,14 @@ def relations(employees):
     return values
 
 
-def coincidence(employee, lista, count):
+def coincidence(employee, pairs, count):
     if count < len(employee):
-        employA, employB = employee[count]
-        names = f"{employA.name}-{employB.name}"
-        counter = intersection(employA.schedule, employB.schedule)
-        lista.append(f"{names}:{counter}")
-        coincidence(employee, lista, count + 1)
-    return lista
+        employ_a, employ_b = employee[count]
+        names = f"{employ_a.name}-{employ_b.name}"
+        counter = intersection(employ_a.schedule, employ_b.schedule)
+        pairs.append(f"{names}:{counter}")
+        coincidence(employee, pairs, count + 1)
+    return pairs
 
 
 def intersection(schedule1, schedule2):
