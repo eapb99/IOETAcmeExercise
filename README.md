@@ -43,7 +43,7 @@ RENE-ANDRES: 2
 - [Python 3.9.13](https://www.python.org/downloads/release/python-3913/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Unittest](https://docs.python.org/3/library/unittest.html)
-FALTA
+- [SonarLint](https://www.sonarlint.org/)
 
 ## Architecture
 
