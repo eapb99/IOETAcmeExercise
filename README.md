@@ -47,7 +47,9 @@ FALTA
 
 ## Architecture
 
+### Design
 
+This project is based on a structured design since its main objective is to carry out modular algorithms. Within this design, the decomposition of the problem into parts is sought, since a general problem is more difficult to solve than each of its parts separately, which results in sub-problems that are easier to solve.
 
 FlowChart|Entity Diagram
 ---|---
@@ -63,6 +65,17 @@ FlowChart|Entity Diagram
 **coincidence(employee, pairs, count)** -> Recursive function that goes through a list of employees and returns the pairs of employees with the number of matches in their schedules.
 
 **intersection(schedule1, schedule2)** -> Function that receives two schedules of 2 employees and returns the number of times they are in the company
+
+## Methodology
+
+This project is based on a waterfall methodology, since the process is successively divided with the intention of having a sequential development, and being able to finish one stage at a time.
+The structure of this methodology is as follows.
+- Requirements: We base ourselves on the needs of the problem, the information provided by the inputs and outputs shown.
+- Analysis: Select the language to be used. (Python)
+- Design: The flow of the program and the design of the entity used were developed using UML
+- Implementation: Functions that perform specific tasks were created in order to be able to address the general problem in parts, in addition to improving the readability and understanding of the code,
+- Test: Unit tests were performed using unittest for each of the functions in order to verify from the structure to the result obtained.
+
 ## Run Locally
 
 To execute the solution of this project we must follow the following steps:
@@ -76,5 +89,11 @@ To execute the main.py it can be done in the IDE of preference or by python cons
 python main.py 
 ```
 
+## Running Test
+
+Simply run the script directly from the command line:
+```
+python tests.py 
+```
 
 
